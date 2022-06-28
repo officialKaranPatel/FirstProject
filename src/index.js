@@ -3,18 +3,20 @@ import ReactDOM from "react-dom";
 
 const fname = "karan";
 const lname = "patel";
-const birthDate = 17/02/2000
-const currDate = new Date().toLocaleDateString();
-const currTime = new Date().toLocaleTimeString();
-
+const img1 =  "https://picsum.photos/200/300";
+const img2 =  "https://picsum.photos/250/300";
+const img3 =  "https://picsum.photos/300/300";
+const links = "https://www.google.com/";
 
 ReactDOM.render(
     
     <>
-    <h1> { `first name is ${fname} and last name is ${lname} `} </h1>
-    <p> current date is = {currDate} </p>
-    <p> current time is = {currTime} </p>
-    
+    <h1 contentEditable= "true" > { `first name is ${fname} and last name is ${lname} `} </h1>
+    <img src={img1} alt='karan'/>
+    <img src={img2} alt='karan'/>
+    <a href={links}>
+    <img src={img3} alt='karan'/>
+    </a>
      </>,
     document.getElementById("root")
 
