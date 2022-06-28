@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 const fname = "karan";
 const lname = "patel";
+const birthDate = 17/02/2000
 const currDate = new Date().toLocaleDateString();
 const currTime = new Date().toLocaleTimeString();
 
