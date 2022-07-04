@@ -19,7 +19,7 @@ ReactDOM.render(
     <a href={links}>
     <img src={img3} alt='karan'/>
     </a>
-    </div>
+    </div>  
      </>,
     document.getElementById("root")
 
