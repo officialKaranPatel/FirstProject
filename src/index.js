@@ -1,16 +1,8 @@
 import React from "react";
-import ReactDOM  from "react-dom";
-import myfav,{favprog,myName} from "./App.jsx";
+import ReactDom from "react-dom" ;
+import App from "./App.jsx"
 
-ReactDOM.render(
-    <>
-    <ol>
-        <li>kp</li>
-        <li>{myfav}</li>
-        <li>{favprog}</li>
-        <li>{myName()}</li>
-    </ol>
-    </>,
+ReactDom.render(
+    <App/>,
     document.getElementById("root")
 );
-
