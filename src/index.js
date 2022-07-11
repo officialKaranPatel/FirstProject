@@ -1,25 +1,26 @@
 import React from "react";
 import ReactDom from "react-dom";
 import Card from "./Cards";
+import data from "./data";
+import './index.css'
 
-ReactDom .render(
+ReactDom.render(
     <>
-          <Card    
-                    imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
-                     title=" A Netflix original series "
-                     Sname ="Dark"
-                     link="https://www.netflix.com/in/title/80990668?source=35"
-                      /> 
-          <Card /> 
-
-          <Card    
-                    imgsrc="https://wallpapercave.com/wp/wp1917154.jpg"
-                     title=" A Netflix original series "
-                     Sname ="stranger things"
-                     link="https://www.netflix.com/in/title/80990668?source=35"
-                      /> 
-          <Card />                                                                              
-     </>,
+        <h1 className="heading_style">List Of top 5 netflix Series</h1>
+        {data.map((val,index) => {
+            console.log(index);
+            return (
+                <Card
+                    key={val.id}
+                    sname={val.sname}
+                    imgsrc={val.imgscr}
+                    title={val.title}
+                    link={val.link}
+                />
+            );
+        })
+        }
+    </>,
     document.getElementById("root")
 
 );
