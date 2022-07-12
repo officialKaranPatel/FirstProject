@@ -3,19 +3,27 @@ import { useState } from "react";
 
 
 const App = () =>{
-    const state = useState();
- //console.log(state);
- const [count, setCount] = useState(0);
-const IncNum = () =>{
-    setCount(count +1);
-}
+    
+ 
+   const currentTime = new Date().toLocaleTimeString();
+   const [ctime, setCtime] = useState(currentTime);
+
+    const UpdateTime = () => {
+    
+    const  currentTime = new Date().toLocaleTimeString();
+    setCtime(currentTime);
+
+
+ };
+ 
+ 
     return(
         <>
-        <h1>{count}</h1>
-        <button onClick={IncNum}>click me</button>
-        </>
-    )
+        <h1>{ctime}</h1>
+        <button onClick={UpdateTime}> get time </button>
 
-}
+        </> 
+);
 
+    };
 export default App;
