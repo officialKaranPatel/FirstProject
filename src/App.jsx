@@ -1,17 +1,21 @@
 import React from "react";
-import add , {sub,mul,div} from "./Calc"
+import { useState } from "react";
 
-function App (){
+
+const App = () =>{
+    const state = useState();
+ //console.log(state);
+ const [count, setCount] = useState(0);
+const IncNum = () =>{
+    setCount(count +1);
+}
     return(
         <>
-       <ul>
-          <li> sum is{add(40,4)} </li>
-          <li> sub is{sub(40,4)} </li>
-          <li> mul is{mul(40,4)} </li>
-          <li> div is{div(40,4)} </li>
-       </ul>
-    </>
+        <h1>{count}</h1>
+        <button onClick={IncNum}>click me</button>
+        </>
     )
+
 }
 
 export default App;

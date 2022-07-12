@@ -24,7 +24,7 @@ const cardData = [
         id:4,
         sname:"Karan Patel",
         imgscr:"https://wallpapercave.com/wp/Bs16Cwe.jpg",
-        title: "Netflix Original Series",
+        title: "amazon Original Series",
         link:"https://www.netflix.com/in/title/70143860",
     },
     {
