@@ -5,11 +5,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #d2dbdd;
+   /* background-color: #d2dbdd; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-div {
+/*div {
     width: 100%;
     height: 100vh;
     background: #8566aa;
@@ -136,9 +136,9 @@ button {
         margin: 5%;
         width: 90%;
     }
-}
+}*/
 
-  /* .main_div{
+   .main_div{
     width:100%;
     height:100vh;
     background:#6983aa;
@@ -262,4 +262,4 @@ ol li{
         color: #fff;
         font-size: 30px;
     }
-} */
+} 
