@@ -1,52 +1,22 @@
 import React from "react";
-import { useState } from "react";
-import CreateNote from "./CreateNote";
-import Footer from "./Footer";
-import Header from "./Header";
-import Note from "./Note";
+import { createContext } from "react";
+import ComA from "./ComA"; 
 
-const App = ()=>{
+const FirstName = createContext();
+const LastName = createContext();
 
-    const [addItem, setAddItem]=useState([]);
-
-
-    const addNote = (note)=>{
-     //   alert("I am clicked");
-        setAddItem((prevData)=>{
-            return[...prevData,note];
-        })
-    }
-    const onDelete =(id )=>{
-        setAddItem((olddata)=>{
-            olddata.filter((currdata,index)=>{
-                return index !== id;
-            })
-        })
-
-    }
-
+const App = ()=> {
     return(
     <div>
-        <Header/>
-        <Footer/>
-        <CreateNote passNote={addNote}/>
-        
-      {  addItem.map ((val,index) =>{
-            return<Note
-                   key={index}
-                   id={index}
-                   title={val.title}
-                   content={val.content}
-                   deleteItem={onDelete}
-            />
+        <FirstName.Provider value={"Karan"}>
+            <LastName.Provider value={"patel"}> 
+        <ComA/>
+        </LastName.Provider>
+        </FirstName.Provider>
+    </div> 
 
+)};
 
-        }) }
-            
-        
-    </div>
-    )
-
-    
-}
+ 
 export default App;
+export {FirstName,LastName};
