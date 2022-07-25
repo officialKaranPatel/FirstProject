@@ -7,7 +7,8 @@ const App = ()=> {
     const[nums , setNums]=useState(0);
 
     useEffect(()=>{
-        alert("i am clicked"); 
+       // alert("i am clicked");
+       document.title=`you clicked me ${num}` 
     },[num]);
     return(
     <div>
